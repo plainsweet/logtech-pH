@@ -25,7 +25,6 @@ with st.sidebar.container():
     
     import json
     import requests
-    from streamlit_lottie import st_lottie
     
     def load_lottiefile(filepath: str):
         with open(filepath, "r") as f:
