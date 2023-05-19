@@ -86,7 +86,8 @@ if test == "Home":
                                        step=1e-1,
                                        format="%.4f")
                 jumlah_digit1=4
-                val = st.number_input(f'Masukkan valensi larutan', format='%.'+str(jumlah_digit)+'f')
+                val = st.number_input(f'Masukkan valensi larutan',  step=1.0,
+                                       format="%.1f")
                 H = cons * val
                 import numpy as np
                 pH = -(np.log10(H))
@@ -103,7 +104,8 @@ if test == "Home":
                                        step=1e-1,
                                        format="%.4f")
                 jumlah_digit1=4 
-                val = st.number_input(f'Masukan valensi larutan', format='%.'+str(jumlah_digit)+'f')
+                val = st.number_input(f'Masukan valensi larutan',  step=1.0,
+                                       format="%.1f")
                 OH = cons * val 
                 import numpy as np 
                 POH = - (np.log10(OH))
