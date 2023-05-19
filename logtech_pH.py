@@ -21,7 +21,6 @@ with st.sidebar.container():
 test = st.sidebar.selectbox("Navigation", ['Home', "About pH🧪", "About Us", "Contact Us"])
        
 with st.sidebar.container():
-    st.sidebar.markdown('Logtech - pH Analysis App')
     
     import json
     import requests   
