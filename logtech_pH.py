@@ -4,7 +4,7 @@ import pandas as pd
 from PIL import Image
 import numpy as np
 import time    
-import streamlit_lottie 
+    
 import streamlit as st
 #pH-Analysis.py
 st.set_page_config(
@@ -21,18 +21,20 @@ with st.sidebar.container():
 test = st.sidebar.selectbox("Navigation", ['Home', "About pH🧪", "About Us", "Contact Us"])
        
 with st.sidebar.container():
-        
-    import json
+    
     import requests
+    import streamlit as st    
     from streamlit_lottie import st_lottie
-    def load_lottieurl(url: str):
+
+    def load_lottie_url(url: str):
         r = requests.get(url)
         if r.status_code != 200:
             return None
         return r.json()
     
-    lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_XvtPY8hkC5.json")
-    st_lottie(lottie_hello, key="hello")
+    lottie_animation_1 = "https://assets9.lottiefiles.com/packages/lf20_XvtPY8hkC5.json"
+    lottie_animation_json = load_lottie_url(lottie_animation_1)
+    st_lottie(lottie_animation_1, key = "hello")
            
             
 
