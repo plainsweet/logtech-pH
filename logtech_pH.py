@@ -493,6 +493,13 @@ if test == "Contact Us":
     lottie_contact = load_lottie_url("https://assets1.lottiefiles.com/packages/lf20_eroqjb7w.json")
     st_lottie(lottie_contact, key = "contact")
     
+hide_menu_style = """
+    <style>
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_menu_style, unsafe_allow_html=True)    
+    
 
     
     
