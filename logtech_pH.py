@@ -83,7 +83,7 @@ if test == "Home":
         if option=="asam kuat":
                 jumlah_digit=4
                 cons = st.number_input(f'Masukkan konsentrasi larutan dalam Molaritas (M)', min_value=0.0000,
-                                       step=1e-4,
+                                       step=1e-1,
                                        format="%.4f")
                 jumlah_digit1=4
                 val = st.number_input(f'Masukkan valensi larutan', format='%.'+str(jumlah_digit)+'f')
@@ -100,7 +100,7 @@ if test == "Home":
         elif option=="basa kuat": 
                 jumlah_digit=4 
                 cons= st.number_input(f'Masukkan konsentrasi larutan dalam Molaritas (M)', min_value=0.0000,
-                                       step=1e-4,
+                                       step=1e-1,
                                        format="%.4f")
                 jumlah_digit1=4 
                 val = st.number_input(f'Masukan valensi larutan', format='%.'+str(jumlah_digit)+'f')
@@ -119,7 +119,7 @@ if test == "Home":
         elif option=="asam lemah": 
                 jumlah_digit=4
                 cons=st.number_input(f'Masukkan konsentrasi larutan dalam Molaritas (M)', min_value=0.0000,
-                                       step=1e-4,
+                                       step=1e-1,
                                        format="%.4f") 
                 a = cons * (1.8 * 10**(-5))
                 import numpy as np
@@ -136,7 +136,7 @@ if test == "Home":
         elif option=="basa lemah": 
                 jumlah_digit=4
                 cons=st.number_input(f'Masukkan konsentrasi larutan dalam Molaritas (M)', min_value=0.0000,
-                                       step=1e-4,
+                                       step=1e-1,
                                        format="%.4f")  
                 a = cons* (1.8 * 10**(-5))
                 import numpy as np
