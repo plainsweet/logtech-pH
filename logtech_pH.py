@@ -412,17 +412,18 @@ pH universal dan kertas lakmus tidak memerlukan peralatan khusus dan lebih mudah
     
 if test == "About Us":
     st.title(':green[Apa itu Logtech - pH Analysis App?]')
-    
     st.subheader("Hello, to all user :wave:")
-    
     st.write(
         "Logtech adalah sebuah web aplikasi yang didesign menentukan pH larutan secara otomatis dan pencarian menarik tentang pH."
     )
     st.write("---")
-
-    st.header("Apa yang Logtech lakukan")
-    st.write("##")
-    st.write(
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.header("Apa yang Logtech lakukan")
+        st.write("##")
+        st.write(
             """
             Di Web Aplikasi pH Analisis ini, kami menyediakan layanan bagi orang-orang yang:
             - sedang mencari nilai pH larutan.  
@@ -434,6 +435,21 @@ if test == "About Us":
             Share web ini jika menarik dan bermanfaat bagi Anda! 👍
             """
         )
+    
+    with col2:
+        
+        import json
+        import requests
+        from streamlit_lottie import st_lottie
+        def load_lottieurl(url: str):
+            r = requests.get(url)
+            if r.status_code != 200:
+                return None
+            return r.json()
+
+        lottie_us = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_bu7jeclm.json")
+        st_lottie(lottie_us, key="us")
+    
     
     st.write("---")
     st.header("Our crew")
