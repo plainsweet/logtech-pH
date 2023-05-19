@@ -296,8 +296,19 @@ if test == "Home":
 
             else:
                 st.error('Nilai yang anda masukkan salah, inputkan dalam range 3.1-14')
+                import json
+                import requests   
+                from streamlit_lottie import st_lottie
 
+                def load_lottie_url(url: str):
+                     r = requests.get(url)
+                     if r.status_code != 200:
+                         return None
+                     return r.json()
     
+                lottie_error = load_lottie_url("https://assets7.lottiefiles.com/packages/lf20_LlRvIg.json")
+                st_lottie(lottie_error, key = "error")
+        
         
 if test == "About pH🧪":
     st.title(':green[Yuk Mengenal Apa Itu pH]')
