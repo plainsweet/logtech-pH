@@ -21,6 +21,8 @@ with st.sidebar.container():
 test = st.sidebar.selectbox("Navigation", ['Home', "About pH🧪", "About Us", "Contact Us"])
        
 with st.sidebar.container():
+    st.sidebar.markdown('Logtech - pH Analysis App')
+    
     import json
     import requests   
     from streamlit_lottie import st_lottie
@@ -33,7 +35,7 @@ with st.sidebar.container():
     
     lottie_hello = load_lottie_url("https://assets9.lottiefiles.com/packages/lf20_XvtPY8hkC5.json")
     st_lottie(lottie_hello, key = "hello")
-    st.sidebar.markdown("Logtech - pH Analysis App")
+    
            
             
 
