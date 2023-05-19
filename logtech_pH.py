@@ -294,7 +294,7 @@ if test == "Home":
     ''')
 
             else:
-                st.error('Nilai yang anda masukkan salah, inputkan dalam range 3.1-14')
+                st.error('Nilai yang anda masukkan salah, inputkan dalam range 1-14')
                 import json
                 import requests   
                 from streamlit_lottie import st_lottie
