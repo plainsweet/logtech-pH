@@ -21,7 +21,7 @@ with st.sidebar.container():
 test = st.sidebar.selectbox("Navigation", ['Home', "About pH🧪", "About Us", "Contact Us"])
        
 with st.sidebar.container():
-    
+    import json
     import requests
     import streamlit as st    
     from streamlit_lottie import st_lottie
