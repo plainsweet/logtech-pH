@@ -88,7 +88,7 @@ if test == "Home":
                 import numpy as np
                 pH = -(np.log10(H))
                 if st.button('Hitung'):
-                    st.write('pH Larutan', NamaLarutan, 'yang merupakan', option, 'adalah')
+                    st.write('pH Larutan', result, 'yang merupakan', option, 'adalah')
                     st.subheader(f':green[{round(pH,2)}]')
                     st.balloons()
                 else :
@@ -106,7 +106,7 @@ if test == "Home":
                 POH = - (np.log10(OH))
                 pH = 14-POH
                 if st.button('Hitung'):
-                    st.write('pH Larutan', NamaLarutan, 'yang merupakan', option, 'adalah')
+                    st.write('pH Larutan', result, 'yang merupakan', option, 'adalah')
                     st.subheader(f':green[{round(pH,2)}]')
                     st.balloons()
                 else :
@@ -123,7 +123,7 @@ if test == "Home":
                 H = np.sqrt(a)
                 pH = -(np.log10(H))
                 if st.button('Hitung'):
-                    st.write('pH Larutan', NamaLarutan, 'yang merupakan', option, 'adalah')
+                    st.write('pH Larutan', result, 'yang merupakan', option, 'adalah')
                     st.subheader(f':green[{round(pH,2)}]')
                     st.balloons()
                 else :
@@ -141,7 +141,7 @@ if test == "Home":
                 POH = - (np.log10(OH))
                 pH = 14 - POH
                 if st.button('Hitung'):
-                    st.write('pH Larutan', NamaLarutan, 'yang merupakan', option, 'adalah')
+                    st.write('pH Larutan', result, 'yang merupakan', option, 'adalah')
                     st.subheader(f':green[{round(pH,2)}]')
                     st.balloons()
                 else :
