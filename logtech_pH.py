@@ -25,13 +25,13 @@ with st.sidebar.container():
     import requests   
     from streamlit_lottie import st_lottie
 
-    def load_lottieurl(url: str):
+    def load_lottie_url(url: str):
         r = requests.get(url)
         if r.status_code != 200:
             return None
         return r.json()
     
-    lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_XvtPY8hkC5.json")
+    lottie_hello = load_lottie_url("https://assets9.lottiefiles.com/packages/lf20_XvtPY8hkC5.json")
     st_lottie(lottie_hello, key = "hello")
            
             
