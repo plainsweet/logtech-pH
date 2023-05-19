@@ -35,7 +35,7 @@ with st.sidebar.container():
     st.lottie(
             lottie_coding,
             speed=1,
-            reverse=False
+            reverse=False,
             loop=True,
             quality="medium",
             renderer="svg",
